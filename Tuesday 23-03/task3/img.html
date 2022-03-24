@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <select id="i" onchange="changeImg()">
+        <option value="select">select</option>
+        <option value="./img1.png">jordan</option>
+        <option value="./img2.png">palestine</option>
+        <option value="./img3.png">lebanon</option>
+    </select> <br>
+    <img src="https://via.placeholder.com/300" id="img-flag">
+    <script>
+        function changeImg(){
+            let v= document.getElementById('i').value;
+            let a= document.getElementById('img-flag').src=v;
+        }
+       
+    </script>
+</body>
+
+</html>

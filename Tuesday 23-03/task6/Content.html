@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 20px;
+            padding: 10px;
+        }
+        a{
+            font-size: large;
+        }
+        #DIV, #DIV2{
+            display: none;
+        }
+        #DIV3{
+            display: none;
+        }
+        h1 {
+            background-color: gray;
+        }
+        
+     
+    </style>
+</head>
+<body>
+<h1>Lorem ipsum <br> <a class="sh" href="#" onclick="f1()">Show</a></h1>
+<div id="DIV">
+    dolor sit amet consectetur adipisicing elit. Accusantium, fugit error. Impedit, alias. Vitae harum ipsam deleniti, dolorum tenetur quaerat laboriosam dolorem fugiat doloremque quae ex? Porro laboriosam obcaecati odit.dolor sit amet consectetur adipisicing elit. Accusantium, fugit error. Impedit, alias. Vitae harum ipsam deleniti, dolorum tenetur quaerat laboriosam dolorem fugiat doloremque quae ex? Porro laboriosam obcaecati odit.dolor sit amet consectetur adipisicing elit. Accusantium, fugit error. Impedit, alias. Vitae harum ipsam deleniti, dolorum tenetur quaerat laboriosam dolorem fugiat doloremque quae ex? Porro laboriosam obcaecati odit.dolor sit amet consectetur adipisicing elit. Accusantium, fugit error. Impedit, alias. Vitae harum ipsam deleniti, dolorum tenetur quaerat laboriosam dolorem fugiat doloremque quae ex? Porro laboriosam obcaecati odit.<br> <br>
+    <a href="#" onclick="f1()">Hide</a>
+</div>
+<h1>Lorem ipsum <br> <a class="sh" href="#" onclick="f2()">Show</a></h1>
+<div id="DIV2">
+    dolor sit amet consectetur adipisicing elit. Accusantium, fugit error. Impedit, alias. Vitae harum ipsam deleniti, dolorum tenetur quaerat laboriosam dolorem fugiat doloremque quae ex? Porro laboriosam obcaecati odit.dolor sit amet consectetur adipisicing elit. Accusantium, fugit error. Impedit, alias. Vitae harum ipsam deleniti, dolorum tenetur quaerat laboriosam dolorem fugiat doloremque quae ex? Porro laboriosam obcaecati odit.dolor sit amet consectetur adipisicing elit. Accusantium, fugit error. Impedit, alias. Vitae harum ipsam deleniti, dolorum tenetur quaerat laboriosam dolorem fugiat doloremque quae ex? Porro laboriosam obcaecati odit.dolor sit amet consectetur adipisicing elit. Accusantium, fugit error. Impedit, alias. Vitae harum ipsam deleniti, dolorum tenetur quaerat laboriosam dolorem fugiat doloremque quae ex? Porro laboriosam obcaecati odit.<br> <br>
+    <a href="#" onclick="f2()">Hide</a>
+</div>
+<h1>Lorem ipsum <br> <a class="sh" href="#" onclick="ff()">Show</a></h1>
+<div id="DIV3">
+    dolor sit amet consectetur adipisicing elit. Accusantium, fugit error. Impedit, alias. Vitae harum ipsam deleniti, dolorum tenetur quaerat laboriosam dolorem fugiat doloremque quae ex? Porro laboriosam obcaecati odit.dolor sit amet consectetur adipisicing elit. Accusantium, fugit error. Impedit, alias. Vitae harum ipsam deleniti, dolorum tenetur quaerat laboriosam dolorem fugiat doloremque quae ex? Porro laboriosam obcaecati odit.dolor sit amet consectetur adipisicing elit. Accusantium, fugit error. Impedit, alias. Vitae harum ipsam deleniti, dolorum tenetur quaerat laboriosam dolorem fugiat doloremque quae ex? Porro laboriosam obcaecati odit.dolor sit amet consectetur adipisicing elit. Accusantium, fugit error. Impedit, alias. Vitae harum ipsam deleniti, dolorum tenetur quaerat laboriosam dolorem fugiat doloremque quae ex? Porro laboriosam obcaecati odit.<br> <br>
+    <a href="#" onclick="ff()">Hide</a>
+</div>
+    
+    
+
+</body>
+<script>
+  function f1() {
+  let x = document.getElementById("DIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+  function f2() {
+ let x = document.getElementById("DIV2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+  
+function ff(){
+let x = document.getElementById("DIV3");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  } 
+}
+
+}
+</script>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+      text-decoration: underline;
+    }</style>
+<body>
+    <form action="">
+        <select name="" id="ff" onchange="f4()">
+            <option value="Arial, Helvetica, sans-serif">Arial</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Verdana, Geneva, Tahoma, sans-serif">Verdana</option>
+        </select>
+        <select name="" id="fs" onchange="f5()">
+            <option value="large">large</option>
+            <option value="medium">medium</option>
+            <option value="small">small</option>
+            </select>
+            <label for="italic">italic</label>
+            <input type="radio" id="italic" onclick="f2()">
+            <label for="bold">bold</label>
+            <input type="radio" id="bold" onclick="f1()">
+            <label for="underline">underline</label>
+            <input type="radio" id="underline" onclick="f3()"> <br> <br>
+            <textarea name="" id="textarea1" cols="100" rows="10">text</textarea>
+
+        
+        
+    </form>
+</body>
+<script>
+    
+
+function f1() { 
+document.getElementById("textarea1").style.fontWeight = "bold"; 
+} 
+
+
+
+function f2() { 
+document.getElementById("textarea1").style.fontStyle = "italic"; 
+} 
+
+
+
+function f3() { 
+document.getElementById("textarea1").style.textDecorationLine = "underline"; 
+} 
+
+
+
+function f4(){     
+let v= document.getElementById('ff').value;
+let a= document.getElementById('textarea1').style.fontFamily=v;
+        }
+
+
+
+
+function f5(){     
+let v= document.getElementById('fs').value;
+let a= document.getElementById('textarea1').style.fontSize=v;
+        }
+</script>
+
+
+
+</html>
