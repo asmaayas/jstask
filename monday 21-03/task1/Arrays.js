@@ -140,14 +140,15 @@ function removeFromArray(a,x){
 }
 console.log(removeFromArray([10,2,3,4,5,0], 0));
 
-//task16  /////wrong!!!
+//task16  
 function oddArray(a){
+    let c=[];
     for(let i=0; i<a.length; i++){
         if(a[i] % 2 == 0){
-          a.splice(i,1)
+          c.push(a[i])
         }
     }
-    return a
+    return +c
 }
 console.log(oddArray([10,4,3,4,5,0,7,10,9,20,12,13,30]));
 
@@ -191,11 +192,11 @@ function repeatChar(a,b){
 };
 console.log(repeatChar('aaaaabbcc','b'));
 
-//task20 /////wrong!!!
+//task20 
 function evenIndexOddLength(a){
     let e=[];
     for(let i=0; i< a.length;++i){
-        if(i%2===0 && a[i].length !== 0 ){
+        if(i%2===0 && a[i].length%2 !== 0 ){
             e.push(a[i])
         }
     }
@@ -217,7 +218,7 @@ console.log(powerElementIndex([44, 5, 4, 3, 2, 10]));
 function evenNumberEvenIndex(a){
     let n=[];
     for (let i=0; i< a.length; ++i){
-        if(a[i]%2===0 && a[i].length % 2===0){
+        if( i%2==0 && a[i]%2==0){
             n.push(a[i]);
         }
     }

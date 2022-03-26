@@ -119,7 +119,8 @@ function selectFromObject(){
 function objectToArray(z){
     let x= Object.keys(z);
     let y = Object.values(z);
-    f= x.concat(y)
+    f= x.concat(y);
+    console.log(Array.isArray(f));
     return f
 }
 console.log(objectToArray({firstName:"Moh",age:24}));
