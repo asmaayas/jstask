@@ -13,9 +13,9 @@ function getPosts() {
         });
          document.body.innerHTML = output;
     }), 1000)
-  } )
+  
   rejest(Error('bad'))
-}
+})} 
 
 function creatPost(post, callback) {
     return new Promise((resolve,rejest)=>{
