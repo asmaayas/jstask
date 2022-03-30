@@ -19,10 +19,10 @@ function callFromLocalStorage(){
         arry=toObj;
         
     }
-   renderOrder(); 
+   renderAdd(); 
 }
-//callFromLocalStorage();
-function user(useName,phone){
+callFromLocalStorage();
+function User(useName,phone){
     this.useName=useName;
     this.phone=phone;
     this.price=priceP(50,200);
@@ -40,7 +40,7 @@ function priceP(min,max){
 }
 
 function con() {
-    let price=user.price;
+    let price=User.price;
     if (price <= 100) {
         return 'use phone';
     } 
@@ -52,28 +52,30 @@ function con() {
 
 formMob.addEventListener("submit",handleSubmit);
  function handleSubmit(event){
-    
+    event.preventDefault();
+    console.log(event.target,'rrrr');
     let useName=event.target.useName.value;
     let phone=event.target.typeNameD.value;
   
 
-    new user(useName,phone);
-    console.log(user);
-    event.preventDefault();
+    new User(useName,phone);
+    console.log(User);
+   
 
  }
- handleSubmit();
+//  handleSubmit();
 
  
  function renderAdd() {
     
-    let trE = document.createElement("tr");
+    tableBody.textContent=' ';
+  
+    for (let i = 0; i < arry.length; i++) {
+        let trE = document.createElement("tr");
     let td1 = document.createElement("td");
     let td2 = document.createElement("td");
     let td3 = document.createElement("td");
     let td4 = document.createElement("td");
-  
-    for (let i = 0; i < arry.length; i++) {
       tableBody.appendChild(trE);
       trE.appendChild(td1);
       trE.appendChild(td2);

@@ -107,20 +107,55 @@ function repeatChar(s){
     
 
 }
+
+
 console.log(repeatChar('mamababatetacedo'));
 
 
-//task9
-function selectFromObject(){
+// function repeatChar(string){
+//     let subSting=string.toLowerCase(); // To count Uppercase and Lowercase
+//     var obj={}
+//     for(let i = 0, length = subSting.length; i < length; i++) {
+//         var objIndex = subSting.charAt(i)
+//         obj[objIndex] = (isNaN(obj[objIndex]) ? 1 : obj[objIndex] + 1); //Another way to write if statment
+//     } 
+//     return obj;
+// }
 
-}
+
+
+//task9
+let x = { a:10 ,b:9}
+console.log(x.length, 'roa');
+
+function selectFromObject(x,y){
+    let obj = {}
+        for(let i =0 ; i<y.length ; i++)
+        {
+            // console.log(Object.keys(x)[0]);
+            // console.log(y[0]);
+            if(Object.keys(x)[i]==y[i])
+            {
+                console.log(x[y[i]]);
+                obj[y[i]] = x[y[i]];
+            }
+        }
+    return obj
+    }
+    
+
+    
+   
+   
+
+
 
 //task10
 function objectToArray(z){
     let x= Object.keys(z);
     let y = Object.values(z);
     f= x.concat(y);
-    console.log(Array.isArray(f));
+    console.log(Array.isArray(f),10);
     return f
 }
 console.log(objectToArray({firstName:"Moh",age:24}));
@@ -135,8 +170,17 @@ function arrayToObject (arr){
     
 
 }
-console.log(arrayToObject(["firstName","Moh","age",24]));
+console.log(arrayToObject(["firstName","Moh","age",24]),111);
 
+
+// function arrayToObject (arr){
+//     let obj = {};
+//     for (let i = 0; i < arr.length; ++i){
+//         obj[arr] = arr[i];}
+//     return obj;
+    
+
+// }
 
 //task12
 function onlyNumber(o){
@@ -151,8 +195,19 @@ function onlyNumber(o){
     }
     return p;
 }
-console.log(onlyNumber({firstName:"Moh",age:24,movies:[1,5,"string"]}));
+console.log(onlyNumber({firstName:"Moh",age:24,movies:[1,5,"string"]}),122222);
 
+//task(13);
+  function onlyString(obj) {
+    let newObj={};
+    for (let i = 0; i < Object.keys(obj).length; i++) {
+      if (typeof(Object.values(obj)[i]) == `string`) {
+        newObj[Object.keys(obj)[i]] = Object.values(obj)[i];
+      }
+    } return newObj;
+  }
+  console.log(onlyString({firstName:"Moh",age:24,movies:[1,5,"string"], he:`ibra`,she:`sara`}));
+  document.write(onlyString({firstName:"Moh",age:24,movies:[1,5,"string"], he:`ibra`,she:`sara`}));
 
 //task15
 // function keysArray(z){

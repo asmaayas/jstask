@@ -11,19 +11,34 @@ function doubleNumbers(arr){
   
 //task2
   aar=["2", "5", "100"];
-  let stringItUp = aar.map(function(a){
-      return a.toString();
-  })
-  console.log(stringItUp,2);
-  
+//   let stringItUp = aar.map(function(a){
+//       return a.toString();
+//   })
+//   console.log(stringItUp,2);
+
+  function stringItUp(aa){
+    let x = aar.map(function(a){
+        return a.toString();
+    }) 
+    console.log(x,2); 
+}
+  console.log(stringItUp(aar));
   //task3
  
   arr=["john", "JACOB", "jinGleHeimer", "schmidt"];
- let capitalizeNames = arr.map(function(a){
-    return a.toUpperCase();
- })
-    // your code here
-    console.log(capitalizeNames,3)
+//  let capitalizeNames = arr.map(function(a){
+//     return a.toUpperCase();
+//  })
+//     // your code here
+//     console.log(capitalizeNames,3)
+function capitalizeNames(arry){
+    let x = arry.map(function(a){
+            return a.toUpperCase();
+          })
+          console.log(x);
+}
+console.log(capitalizeNames(arr),3)
+
   
   
 //task4
@@ -50,10 +65,23 @@ function doubleNumbers(arr){
            age: 100
       }
        ];
-  let namesOnly = a.map(function(b){
-      return b.name
-  })
-  console.log(namesOnly,4);
+
+
+
+//   let namesOnly = a.map(function(b){
+//       return b.name
+//   })
+
+function namesOnly(aa){
+    let x = aa.map(function(b){
+               return b[key]
+          })
+          console.log(x);
+}
+  console.log(namesOnly(a),4);
+
+
+
   //task5
   a =[
     {
